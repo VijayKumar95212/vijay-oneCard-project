@@ -127,6 +127,9 @@ const UserProfile = () => {
           <li className="menu-item logout" onClick={handleLogout}>
             <FaSignOutAlt /> Logout
           </li>
+           <li className="menu-item logout" >
+            <FaSignOutAlt /> createproduct
+          </li>
         </ul>
       </aside>
 
