@@ -35,7 +35,8 @@ const Admin = () => {
     
               <li className="menu-item logout">
           
-                   <Link to = "/"> <FaSignOutAlt />Go to home</Link>
+                   <Link to = "/"> <FaSignOutAlt />Back home</Link>
+                   
   
               </li>
              </ul>
