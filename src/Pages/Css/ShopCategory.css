@@ -1,0 +1,146 @@
+/* .shopcategory-banner{
+    display: flex;
+    margin: 30px 0px 30px 0px;
+    width: 100%;
+
+}
+.shopcategory-indexsort{
+    display: flex;
+    margin: 0px 0px;
+    justify-content: space-between;
+    align-items: center;
+}
+.shopcategry-sort{
+    padding: 10px 20px;
+    border-radius: 40px;
+    border: 1px solid #888;
+}
+.shopcategory-indexsort p span{
+     font-weight: 600;
+}
+.shopcategory-products{
+    margin: 20px 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 80px;
+     column-gap: 10px; 
+} 
+.shopcategory-loadmore{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 150px auto;
+    width:233px;
+    height: 69px;
+    border-radius: 75px;
+    background: #ededed;
+    color: #787878;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* Tablet */
+/* @media (max-width: 992px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+} */
+
+/* Mobile */
+/* @media (max-width: 600px) {
+  .product-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+} */
+ 
+/* ---------------------- DESKTOP STYLES ---------------------- */
+
+.shopcategory-banner {
+  display: flex;
+  margin: 30px 0;
+  width: 100%;
+}
+
+.shopcategory-indexsort {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.shopcategry-sort {
+  padding: 10px 20px;
+  border-radius: 40px;
+  border: 1px solid #888;
+  cursor: pointer;
+  background: #fff;
+}
+
+.shopcategory-indexsort p span {
+  font-weight: 600;
+}
+
+.shopcategory-products {
+  margin: 20px 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px 20px;
+}
+
+.shopcategory-loadmore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 80px auto;
+  width: 233px;
+  height: 69px;
+  border-radius: 75px;
+  background: #ededed;
+  color: #787878;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+
+
+/* ---------------------- SINGLE MEDIA QUERY FOR ALL DEVICES ---------------------- */
+
+@media (max-width: 900px) {
+
+  /* Banner */
+  .shopcategory-banner {
+    margin: 15px 0;
+  }
+
+  /* Index + Sort section */
+  .shopcategory-indexsort {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  /* Product Grid Adjustments */
+  .shopcategory-products {
+    grid-template-columns: repeat(2, 1fr); /* Tablet */
+    gap: 25px 15px;
+  }
+
+  /* Further collapse grid for mobile */
+  @media (max-width: 600px) {
+    .shopcategory-products {
+      grid-template-columns: repeat(1, 1fr); /* Mobile */
+    }
+  }
+
+  /* Load More Button */
+  .shopcategory-loadmore {
+    width: 180px;
+    height: 55px;
+    font-size: 16px;
+    margin: 50px auto;
+  }
+}
+
+/* ---------------------- END ---------------------- */
+

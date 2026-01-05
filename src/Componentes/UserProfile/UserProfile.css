@@ -1,0 +1,188 @@
+/* ================= LAYOUT ================= */
+.profile-container {
+  display: flex;
+  min-height: 100vh;
+  background: #f3f3f3;
+}
+
+/* ================= SIDEBAR (DESKTOP) ================= */
+.sidebar {
+  width: 260px;
+  background: #fff;
+  padding: 25px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.sidebar-title {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.menu-list {
+  list-style: none;
+  padding: 0;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.menu-item a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.menu-item.active {
+  color: #007bff;
+  font-weight: bold;
+}
+
+.logout {
+  color: red;
+}
+
+/* ================= MOBILE NAV ================= */
+.mobile-nav {
+  display: none;
+}
+
+/* ================= MAIN ================= */
+.main-content {
+  flex: 1;
+  padding: 40px;
+}
+
+.profile-card {
+  max-width: 900px;
+  background: #fff;
+  margin: auto;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.profile-header img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.edit-btn {
+  margin-left: auto;
+  padding: 8px 15px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+}
+
+/* ================= FORM ================= */
+.edit-form {
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.edit-form input {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.full {
+  grid-column: span 2;
+}
+
+.actions {
+  grid-column: span 2;
+  display: flex;
+  gap: 10px;
+}
+
+.save {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.cancel {
+  background: #999;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .desktop-only {
+    display: none;
+  }
+
+  .profile-container {
+    flex-direction: column;
+  }
+
+  .mobile-nav {
+    display: flex;
+    justify-content: space-around;
+    background: #fff;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  .mobile-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+    background: none;
+    border: none;
+    text-decoration: none;
+    color: #333;
+  }
+
+  .mobile-item svg {
+    font-size: 20px;
+    margin-bottom: 4px;
+  }
+
+  .mobile-item.active {
+    color: #007bff;
+  }
+
+  .profile-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .edit-btn {
+    margin: 10px auto;
+  }
+
+  .edit-form {
+    grid-template-columns: 1fr;
+  }
+
+  .full,
+  .actions {
+    grid-column: span 1;
+  }
+}

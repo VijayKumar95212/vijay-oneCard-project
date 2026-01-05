@@ -1,0 +1,108 @@
+/* Page wrapper */
+.main-content {
+  padding: 30px;
+  background-color: #f6f7fb;
+  min-height: 100vh;
+}
+
+/* Card container */
+.profile-card {
+  max-width: 800px;
+  margin: auto;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  padding: 25px 30px;
+}
+
+/* Header */
+.profile-header {
+  margin-bottom: 20px;
+}
+
+.profile-header h1 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #222;
+}
+
+/* Form */
+.product-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Inputs, select, textarea */
+.product-form input,
+.product-form select,
+.product-form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+/* Focus effect */
+.product-form input:focus,
+.product-form select:focus,
+.product-form textarea:focus {
+  border-color: #0a7cff;
+  box-shadow: 0 0 0 2px rgba(10, 124, 255, 0.15);
+}
+
+/* Textarea resize */
+.product-form textarea {
+  resize: vertical;
+}
+
+/* File input */
+.product-form input[type="file"] {
+  padding: 10px;
+  border: 1px dashed #aaa;
+  background-color: #fafafa;
+  cursor: pointer;
+}
+
+/* Image preview (update page) */
+.product-form img {
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  margin-top: 5px;
+}
+
+/* Button */
+.btn.create {
+  margin-top: 10px;
+  background-color: #0a8f08;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.25s, transform 0.1s;
+}
+
+.btn.create:hover {
+  background-color: #087508;
+}
+
+.btn.create:active {
+  transform: scale(0.98);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .profile-card {
+    padding: 20px;
+  }
+
+  .profile-header h1 {
+    font-size: 20px;
+  }
+}
