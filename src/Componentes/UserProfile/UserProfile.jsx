@@ -5,6 +5,7 @@ import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import BASE_URL from "./../../Base-url.jsx";
 
+
 const defaultAvatar =
   "https://cdn-icons-png.flaticon.com/512/3135/3135715.png";
 
