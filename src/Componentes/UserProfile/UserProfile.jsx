@@ -3,8 +3,8 @@ import "./UserProfile.css";
 import { FaUser, FaHome, FaSignOutAlt } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
+import BASE_URL from "./../../Base-url.jsx";
 
-const BASE_URL = "http://localhost:8597";
 const defaultAvatar =
   "https://cdn-icons-png.flaticon.com/512/3135/3135715.png";
 
