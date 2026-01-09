@@ -14,13 +14,13 @@ const ShopCategory = (props) => {
   const productGet = async () => {
     try {
       const res = await axios.get(
-        "http://localhost:8597/api/product/listproducts"
+        "https://onecard-backend.onrender.com/api/product/listproducts"
       );
 
       const normalizedDbProducts = res.data.products.map((item) => ({
         id: item._id,
         name: item.name,
-        image: `http://localhost:8597/uploads/${item.image}`,
+        image: `https://onecard-backend.onrender.com/uploads/${item.image}`,
         new_price: item.price,
         old_price: item.old_price || item.price,
         category: item.category.toLowerCase(),
@@ -81,7 +81,7 @@ const ShopCategory = (props) => {
           <div key={item._id}>
             {item.name}
             <p>{item.price}</p>
-            <img src={`http://localhost:8597/uploads/${item.image}`} alt="" />
+            <img src={`https://onecard-backend.onrender.com/uploads/${item.image}`} alt="" />
             <p>{item.category}</p>
           </div>
         ))}
@@ -94,7 +94,7 @@ const ShopCategory = (props) => {
                 key={i}
                 id={item.id}
                 name={item.name}
-                image={`http://localhost:8597/uploads/${item.image}`}
+                image={`https://onecard-backend.onrender.com/uploads/${item.image}`}
                 new_price={item.new_price}
                 old_price={item.old_price}
               />

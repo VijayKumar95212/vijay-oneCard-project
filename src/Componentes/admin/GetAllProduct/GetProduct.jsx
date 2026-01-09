@@ -7,7 +7,7 @@ const GetProduct = () => {
   const [products, setProducts] = useState([]);
   const [search, setSearch] = useState("");
 
-  const API_ROOT = "http://localhost:8597/api/product";
+  const API_ROOT = "https://onecard-backend.onrender.com/api/product";
 
   // 🔹 Get all products
   const getAllProducts = async () => {

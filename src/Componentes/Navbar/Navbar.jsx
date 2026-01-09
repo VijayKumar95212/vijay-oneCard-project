@@ -8,7 +8,7 @@ import axios from "axios";
 import { CgProfile } from "react-icons/cg";
 import drop_down_icon from "../Assest/dropdown.jpeg";
 
-const BASE_URL = "http://localhost:8597";
+const BASE_URL = "https://onecard-backend.onrender.com";
 const Navbar = () => {
   // const [auth, setAuth] = useState(localStorage.getItem("auth-token"));
   const navigate = useNavigate();
