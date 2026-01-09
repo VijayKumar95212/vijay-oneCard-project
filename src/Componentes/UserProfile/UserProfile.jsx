@@ -3,7 +3,7 @@ import "./UserProfile.css";
 import { FaUser, FaHome, FaSignOutAlt } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
-import BASE_URL from "./../../Base-url.jsx";
+const BASE_URL = "https://onecard-backend.onrender.com"; 
 
 
 const defaultAvatar =
